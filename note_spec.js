@@ -66,3 +66,15 @@ function testDisplayNoteList() {
 };
 
 testDisplayNoteList();
+
+function testSingleNoteView() {
+  var noteList = { list: [{ text: "This is a note on Tuesday" }]};
+  var singleNote = new SingleNote();
+  if(singleNote.displayNote() !== "<ul><li>Favourite drink: seltzer</li></ul>") {
+    throw new Error("No list created")
+  }
+  be taken to a page where the full note is
+  expect that page to have the full note text
+};
+
+testSingleNoteView();
